@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <link rel="stylesheet" th:href="@{/css/stylesa.css}">
+    <title>Quiver web app</title>
+    <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}">
+</head>
+<body>
+    <div class="container">
+        <p th:text="${answer}">NullPointerException is a runtime exception in Java that occurs when trying to use a variable that does not point to an object and refers to nothing or null</p>
+        <div class="form-container">
+            <form action="/next" method="get">
+        <button type="submit">Next flashcard</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

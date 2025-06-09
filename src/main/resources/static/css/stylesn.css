@@ -1,0 +1,57 @@
+.container {
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-container {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #50514F;
+    align-content: center;
+    margin: 0;
+}
+
+p {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    font-family: monospace;
+    font-size: large;
+    color: #CBD4C2;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+button {
+    background-color: #CBD4C2;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-family: monospace;
+    font-size: larger;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+button:hover {opacity: 0.6}

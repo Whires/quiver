@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <link rel="stylesheet" th:href="@{/css/stylesn.css}">
+    <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}">
+    <title>Quiver web app</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text-container">
+        <p th:text="${message}">No more flashcards remaining!</p>
+        <p th:text="${good}">Good job on learning today!</p>
+    </div>
+    <form action="/" method="get">
+        <button type="submit">Restart</button>
+    </form>
+    </div>
+</body>
+</html>

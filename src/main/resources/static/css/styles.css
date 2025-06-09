@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #50514F;
+}
+
+img {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.form {
+    height:100vh;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+    
+}
+
+form {
+    display: flex;
+    width: 370px;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+textarea {
+field-sizing: content;
+font-family: monospace;
+border-color: #CBD4C2;
+border-width: 3px;
+background-color: #CBD4C2;
+}
+
+input {
+    width: fit-content;
+}
+
+button {
+    background-color: #CBD4C2;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-family: monospace;
+    transition: 0.3s;
+}
+
+button:hover {opacity: 0.6}

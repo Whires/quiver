@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <link rel="stylesheet" th:href="@{/css/stylesq.css}">
+    <title>Quiver web app</title>
+    <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}">
+</head>
+<body>
+    <div class="container">
+         <p th:text="${question}">What is a NullPointer exception?</p>
+    <div class="form-container">
+        <form action="/next" method="get">
+        <button type="submit">Skip flashcard</button>
+    </form>
+    <form action="/showanswer" mthod="get">
+        <button type="submit">Show answer</button>
+    </form>
+    <form action="/" method="get">
+        <button type="submit">Exit</button>
+    </form>
+    </div>
+        </div>
+</body>
+</html>

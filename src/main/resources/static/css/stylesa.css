@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #50514F;
+    align-content: center;
+    margin: 0;
+}
+
+p {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    font-family: monospace;
+    font-size: large;
+    color: #CBD4C2;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left:40px;
+    margin-right: 40px;
+}
+
+button {
+    background-color: #CBD4C2;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-family: monospace;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+form {
+    width: fit-content;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+button:hover {opacity: 0.6}

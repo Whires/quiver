@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}">
+    <title>Quiver web app</title>
+</head>
+<body>
+    <div class="form">
+             <form action="/upload" method="post" enctype="multipart/form-data">
+                <textarea name="jsonData" placeholder="Paste your JSON data here"></textarea>
+            <button type="submit">Upload flashcards</button>
+            </form>
+    </div>
+    <img th:src="@{/images/Quiver.svg}" alt="Logo">
+</body>
+</html>

@@ -8,12 +8,14 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    animation: fadeIn 1s ease;
 }
 
 .form-container {
+    margin-top: 100px;
     display: flex;
-    justify-content:space-around;
-
+    justify-content:space-between;
+    gap: 50px;
 }
 
 form {
@@ -25,36 +27,47 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #50514F;
+    background-image: url(../images/back.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     align-content: center;
     margin: 0;
+    overflow: hidden;
 }
 
 p {
     opacity: 0;
     animation: fadeIn 2s forwards;
-    font-family: monospace;
-    font-size: large;
-    color: #CBD4C2;
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #247BA0;
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
 }
 
 button {
-    background-color: #CBD4C2;
+    background-color: white;
     text-decoration: none;
     border: none;
     display: inline-block;
-    font-family: monospace;
+    font-family: 'Roboto';
+    font-size: large;
     opacity: 1;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
 }
 
 button:hover {opacity: 0.6}

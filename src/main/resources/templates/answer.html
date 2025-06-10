@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
-    <link rel="stylesheet" th:href="@{/css/stylesa.css}">
+    <link rel="stylesheet" th:href="@{/css/stylesa.css}"> 
     <title>Quiver web app</title>
     <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}">
+     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
@@ -14,7 +15,7 @@
         <button type="submit">Next flashcard</button>
         </form>
             <form action="/repeatcard" method="get" enctype="multipart/form-data">
-                <button type="submit">Repeat flashcards</button>
+                <button type="submit">Repeat flashcard</button>
             </form>
         </div>
     </div>

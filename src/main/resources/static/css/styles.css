@@ -1,12 +1,13 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: #50514F;
+    background-color: white;
+    overflow: hidden;
 }
 
 img {
     opacity: 0;
-    animation: fadeIn 2s forwards;
+    animation: fadeIn 1s forwards;
 }
 
 .form {
@@ -19,6 +20,19 @@ img {
     flex-wrap: wrap;
 }
 
+.sty {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #247BA0;
+    height: 700px;
+    width: 1000px;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    border: 0;
+    animation: fadeIn 1s ease;
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
@@ -28,30 +42,57 @@ img {
 
 form {
     display: flex;
-    width: 370px;
+    align-items: center;
+    width: 700px;
     height: fit-content;
     justify-content: space-between;
 }
 
 textarea {
-field-sizing: content;
-font-family: monospace;
-border-color: #CBD4C2;
-border-width: 3px;
-background-color: #CBD4C2;
+font-family: 'Roboto';
+font-size: larger;
+background-color: #F8F9FA;
+resize: none;
+width: 400px;
+height: 500px;
+border-radius: 10px;
+padding: 10px;
+}
+
+textarea::placeholder {
+    font-family: 'Roboto';
+    font-size: 18px;
 }
 
 input {
     width: fit-content;
 }
 
-button {
-    background-color: #CBD4C2;
+button{
+    background-color: #F8F9FA;
     text-decoration: none;
     border: none;
     display: inline-block;
-    font-family: monospace;
+    font-family: 'Roboto';
+    font-weight: 560;
+    font-size: 18px;
     transition: 0.3s;
+    width: auto;
+    height: auto;
+    margin-left: 100px;
+    border-radius: 12px;
+    padding: 12px 32px;
+    cursor: pointer;
 }
 
 button:hover {opacity: 0.6}
+
+button:focus {
+    outline: 2px solid #4FC3F7;
+    outline-offset: 2px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}

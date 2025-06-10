@@ -66,4 +66,16 @@ public class UploadController {
         }
         return "answer";
     }
+
+    @GetMapping("/repeatcard")
+    public String repeatCard(Model model) {
+        if (FlashcardmanagamentService.currentFlashcard != null) {
+            FlashcardmanagamentService.flashcards.add(FlashcardmanagamentService.currentFlashcard);
+            model.addAttribute("question", FlashcardmanagamentService.currentFlashcard.getQuestion());
+        } else {
+            model.addAttribute("message", "No flashcards to repeat.");
+            return "noremaining";
+        }
+        return "question";
+    }
 }

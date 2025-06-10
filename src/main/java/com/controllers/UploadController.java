@@ -71,6 +71,7 @@ public class UploadController {
     public String repeatCard(Model model) {
         if (FlashcardmanagamentService.currentFlashcard != null) {
             FlashcardmanagamentService.flashcards.add(FlashcardmanagamentService.currentFlashcard);
+            FlashcardmanagamentService.currentFlashcard = flashcardService.getRandomFlashcard();
             model.addAttribute("question", FlashcardmanagamentService.currentFlashcard.getQuestion());
         } else {
             model.addAttribute("message", "No flashcards to repeat.");

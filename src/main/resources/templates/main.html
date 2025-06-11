@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" th:href="@{/css/stylem.css}">
+    <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Quiver web app</title>
+</head>
+<body>
+    <div id="header">
+        <img th:src="@{/images/Quiver.svg}" alt="Logo"> 
+        <div id="button-container">
+            <form action="/about" method="get">
+            <button type="submit">About</button>
+            </form>
+            <form action="/contact" method="get">
+            <button type="submit">Contact</button>
+            </form>
+        </div>
+    </div>
+    <div id="container">
+        <div class="main-card">
+            <h1>Despre aplicatia Quiver</h1>
+            <p>Cand am creat aceasta aplicatie, m-am gandit la situatia mea de invatat,
+                imi era foarte greu sa memorez lucruri, asadar am inceput sa folosesc tehnica
+                "Flashcard-urilor". Cartonase cu intrebarea pe fata si cu un raspuns pe spate. Dar,
+                intr-o zi, ma plictisisem de atata taiat si scris manual si am zis ca odata si odata voi crea
+                propria mea aplicatie de flashcard-uri, virtuala, usor de folosit. Prilejul acestui concurs m-a impins sa o creez. Quiver este aceasta aplicatie.
+                O aplicatie de web bazata pe Java, care ia un date de intrare de la un JSON USOR de formatat, si
+                le aranjeaza in formatul flashcard-urilor.
+            </p>
+        </div>
+        <img th:src="@{/images/Quiver.svg}" alt="Logo">
+        <div class="main-card">
+            <h1>Cum se foloseste?</h1>
+                <p>Aplicatia este foarte usor de folosit. Pe pagina principala veti putea
+                    vedea o aree de text in care poti copia datele JSON-ului direct. Dupa aceea
+                    apasati Upload Flashcards si repetati! Un exemplu de JSON ar fi acesta: 
+                    <a th:href="@{questions_programming.json}" target="_blank">JSON flashcard-uri programare in Java</a>
+                    JSON flashcard-uri programare in Java.
+                     Am ales formatul de JSON, deoarece este foarte usor usor de scris chiar si de oameni fara 
+                     experienta in programare.
+                </p>       
+         </div>
+    </div>
+    <div id="start-app">
+        <form action="/main" method="get">
+            <button type="submit" id="start-button">Start!</button>
+        </form>
+    </div>
+    <div id="footer">
+        <span>Boanta Robert - Facut pentru concursul "The beauty of coding" 2025, editia a-IV-a</span>
+    </div>
+</body>
+</html>

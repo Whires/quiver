@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" th:href="@{/css/stylem.css}">
+    <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Quiver web app</title>
+</head>
+<body>
+    <div id="header">
+        <img th:src="@{/images/Quiver.svg}" alt="Logo">
+        <div id="button-container">
+            <form action="/about" method="get">
+                <button type="submit">About</button>
+            </form>
+            <form action="/contact" method="get">
+                <button type="submit">Contact</button>
+            </form>
+            <form action="/" method="get">
+                <button type="submit">Main page</button>
+            </form>
+        </div>
+    </div>
+    <div id="container">
+    <div class="main-card">
+        <p>
+            Quiver este o aplicatie web de flashcard-uri bazata pe Java (Spring boot),
+            HTML si CSS. Este usor de folosit si foarte puternica. A fost construita in Iunie 2025
+            Pentru a 4-a editie a concursului "The beauty of coding" din cadrul liceului Vianu. Aceasta
+            Este creata in principal pentru oameni cu dificultati in memorare si care au nevoie de o metoda
+            interactiva si creativa pentru a memora cantitati mari de informatii.
+        </p>
+    </div>    
+    </div>
+    </div>
+    <div id="footer">
+        <span>Boanta Robert - Facut pentru concursul "The beauty of coding" 2025, editia a-IV-a</span>
+    </div>
+</body>
+</html>

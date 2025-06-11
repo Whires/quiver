@@ -17,11 +17,12 @@ import java.util.List;
 @Controller
 public class UploadController {
     private final FlashcardmanagamentService flashcardService;
+
     public UploadController(FlashcardmanagamentService flashcardService) {
         this.flashcardService = flashcardService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/main")
     public String home() {
         return "index";
     }
@@ -33,7 +34,8 @@ public class UploadController {
     ) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            FlashcardmanagamentService.flashcards = mapper.readValue(jsonData, new TypeReference<List<Flashcard>>() {});
+            FlashcardmanagamentService.flashcards = mapper.readValue(jsonData, new TypeReference<List<Flashcard>>() {
+            });
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
@@ -48,7 +50,7 @@ public class UploadController {
             model.addAttribute("message", "No flashcards left.");
             model.addAttribute("good", flashcardService.getRandomGoodJobMessage());
             return "noremaining";
-        }else {
+        } else {
             FlashcardmanagamentService.currentFlashcard = flashcardService.getRandomFlashcard();
             model.addAttribute("question", FlashcardmanagamentService.currentFlashcard.getQuestion());
         }
@@ -78,5 +80,20 @@ public class UploadController {
             return "noremaining";
         }
         return "question";
+    }
+
+    @GetMapping("/contact")
+    public String contact() {
+        return "contact";
+    }
+
+    @GetMapping("/about")
+    public String about() {
+        return "about";
+    }
+
+    @GetMapping("/")
+    public String main() {
+        return "main";
     }
 }

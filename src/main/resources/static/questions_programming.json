@@ -1,0 +1,19 @@
+[
+  {
+    "question": "What is polymorphism in object-oriented programming?",
+    "answer": "Polymorphism allows objects to be treated as instances of their parent class rather than their actual class."
+  },
+  {
+    "question": "What does the 'final' keyword mean in Java?",
+    "answer": "The 'final' keyword indicates that a variable's value cannot be changed, a method cannot be overridden, or a class cannot be subclassed."
+  },
+  {
+    "question": "Explain the difference between an interface and an abstract class in Java.",
+    "answer": "An interface defines a contract with no implementation, while an abstract class can provide both abstract methods and concrete methods."
+  },
+  {
+    "question": "What is a NullPointerException?",
+    "answer": "A NullPointerException is thrown when an application attempts to use an object reference that has not been initialized."
+  }
+]
+

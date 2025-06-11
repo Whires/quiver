@@ -4,6 +4,7 @@
     <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" th:href="@{/css/stylem.css}">
+    <link rel="stylesheet" href="../static/css/stylem.css">
     <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>Quiver web app</title>
@@ -29,7 +30,7 @@
                 "Flashcard-urilor". Cartonase cu intrebarea pe fata si cu un raspuns pe spate. Dar,
                 intr-o zi, ma plictisisem de atata taiat si scris manual si am zis ca odata si odata voi crea
                 propria mea aplicatie de flashcard-uri, virtuala, usor de folosit. Prilejul acestui concurs m-a impins sa o creez. Quiver este aceasta aplicatie.
-                O aplicatie de web bazata pe Java, care ia un date de intrare de la un JSON USOR de formatat, si
+                O aplicatie de web bazata pe Java, care ia date de intrare de la un JSON USOR de formatat, si
                 le aranjeaza in formatul flashcard-urilor.
             </p>
         </div>
@@ -37,10 +38,9 @@
         <div class="main-card">
             <h1>Cum se foloseste?</h1>
                 <p>Aplicatia este foarte usor de folosit. Pe pagina principala veti putea
-                    vedea o aree de text in care poti copia datele JSON-ului direct. Dupa aceea
+                    vedea o casuta de text in care poti da paste datele JSON-ului direct. Dupa aceea
                     apasati Upload Flashcards si repetati! Un exemplu de JSON ar fi acesta: 
-                    <a th:href="@{questions_programming.json}" target="_blank">JSON flashcard-uri programare in Java</a>
-                    JSON flashcard-uri programare in Java.
+                    <a th:href="@{questions_programming.json}" target="_blank">JSON flashcard-uri programare in Java</a>.
                      Am ales formatul de JSON, deoarece este foarte usor usor de scris chiar si de oameni fara 
                      experienta in programare.
                 </p>       

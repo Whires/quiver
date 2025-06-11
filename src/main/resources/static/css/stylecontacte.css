@@ -8,7 +8,7 @@
 
 #container {
     display: flex;
-    height: 700px;
+    height: 800px;
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;

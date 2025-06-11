@@ -4,6 +4,7 @@
     <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" th:href="@{/css/stylem.css}">
+    <link rel="stylesheet" href="../static/css/stylem.css">
     <link rel="icon" type="image/x-icon" th:href="@{/images/icon.svg}"> 
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>Quiver web app</title>
@@ -21,14 +22,15 @@
             <form action="/main" method="get">
                 <button type="submit">Main page</button>
             </form>
+        </div>
     </div>
     <div id="container">
-    <div class="main-card">
-        <p>Email: robert@boanta.ro <br>
-            Github: <a href="https://github.com/Whires">Whires</a></p>
-    </div>    
-    </div>
-    </div>
+        <div class="main-card">
+            <p>Email: robert@boanta.ro <br>
+                Github: <a href="https://github.com/Whires">Whires</a>
+            </p>
+        </div>
+    </div>   
     <div id="footer">
         <span>Boanta Robert - Facut pentru concursul "The beauty of coding" 2025, editia a-IV-a</span>
     </div>
